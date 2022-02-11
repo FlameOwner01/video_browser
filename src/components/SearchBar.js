@@ -5,7 +5,7 @@ import "../styles/style.css";
 
 class SearchBar extends React.Component {
 
-    state = { title: "best music"}
+    state = { title: "manga"}
 
    
 
@@ -18,15 +18,15 @@ class SearchBar extends React.Component {
         event.preventDefault();
         this.props.onSearch(this.state.title);
     }
-    firstSearch = event =>{
-        event.preventDefault();
-        const _title = event.target.value;  
-        this.props.onSearch(_title);
+
+    componentDidMount(){
+        this.props.onSearch(this.state.title);
     }
+    
 
     render(){
         return (
-            <div id ="SearchBar" onLoadStart={this.firstSearch} value="Manga">
+            <div id ="SearchBar">
                 <form onSubmit={this.onSubmit}>
                     <h1 id='title'>Search for a video</h1>
                 <input value ={this.state.title} onChange={this.onSearchChange} type="search" placeholder="Search" id="search"></input>

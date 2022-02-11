@@ -20,9 +20,6 @@
     margin-top: 50px;
     height: 480px;
 }
-.video-iframe{
-    
-}
 
 #search{
     margin-top: 50px;
@@ -40,7 +37,7 @@
 .video-list{
  width: 30%;
  margin-left: 70%;
- margin-top: -740px;
+ margin-top: -700px;
 }
 
 .button{

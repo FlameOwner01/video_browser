@@ -2,7 +2,6 @@ import React from "react";
 import VideoItem from "./VideoItem.js";
 
 const VideoList = ({ onVideoSelected, data }) =>{
-   
     return(
         <div className="video-list">
             <div style={{ padding: "20px 0" }}>

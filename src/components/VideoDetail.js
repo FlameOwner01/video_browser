@@ -3,7 +3,7 @@ import React from "react";
 
 const VideoDetail = ({ videoId }) =>{
 
-    console.log(videoId);
+    
     return(
         <div className="video-player">
             <iframe 

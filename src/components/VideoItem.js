@@ -27,7 +27,6 @@ function constructVideoTitles(vidoesData, onVideoSelected) {
   });
 }
 const Video = ({ data, onVideoSelected }) => {
-  console.log(data, onVideoSelected);
   return <>{constructVideoTitles(data, onVideoSelected)}</>;
 };
 
